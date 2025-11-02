@@ -1,1 +1,30 @@
-
+/*! Iryam Combined CSS - JetTheme 2.9 Optimized | system-ui + Auto Dark Mode */
+:root{
+--primary:#0d6efd;--secondary:#495057;--bg:#f8f9fa;--text:#343a40;--heading:#212529;--link:#0a58ca;--hover:#0b5ed7;
+--radius:.5rem;--shadow:0 2px 8px rgba(0,0,0,.05)}
+@media(prefers-color-scheme:dark){
+:root{
+--primary:#4dabf7;--secondary:#ced4da;--bg:#121212;--text:#e9ecef;--heading:#f8f9fa;--link:#91c9ff;--hover:#b7e0ff;
+--shadow:0 2px 8px rgba(0,0,0,.3)}
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+h1,h2,h3,h4,h5,h6{color:var(--heading);margin-bottom:.5em}
+a{color:var(--link);text-decoration:none;transition:.3s}
+a:hover{color:var(--hover)}
+button,.btn{cursor:pointer;border:none;border-radius:var(--radius);padding:.6em 1.2em;background:var(--primary);color:#fff;transition:.3s;box-shadow:var(--shadow)}
+button:hover,.btn:hover{background:var(--hover)}
+.container{max-width:1200px;margin:auto;padding:0 1rem}
+img{max-width:100%;height:auto;display:block;border-radius:var(--radius)}
+.navbar{background:var(--bg);padding:1rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(0,0,0,.1)}
+footer{background:var(--secondary);color:#fff;text-align:center;padding:1rem 0;margin-top:2rem}
+.card{background:#fff;color:var(--text);border-radius:var(--radius);box-shadow:var(--shadow);padding:1rem;margin-bottom:1rem}
+@media(prefers-color-scheme:dark){
+.card{background:#1e1e1e;color:var(--text)}
+footer{background:#000}
+}
+.lazyload{opacity:0;transition:opacity .3s ease-in-out}
+.lazyload.loaded{opacity:1}
+iframe,video{max-width:100%;border:none;border-radius:var(--radius)}
+/* Font Awesome essential icons only */
+.fa,.fas,.far,.fab{font-family:"Font Awesome 6 Free";font-weight:900}
