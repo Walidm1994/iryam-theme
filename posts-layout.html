@@ -1,0 +1,43 @@
+<!-- posts-layout.html -->
+<b:section id="main" class="main-section" showaddelement="yes">
+  <b:widget id="Blog1" type="Blog" title="المشاركات" visible="true">
+    <b:includable id="main-posts" var="widget">
+      <b:loop values='data:posts' var='post'>
+        <article class="post-card">
+          <!-- صورة المقال -->
+          <a expr:href='data:post.url'>
+            <img class="post-card-img" expr:src='data:post.firstImageUrl' alt='data:post.title'/>
+          </a>
+
+          <!-- محتوى المقال -->
+          <div class="post-card-content">
+            <!-- العنوان -->
+            <h2 class="post-card-title">
+              <a expr:href='data:post.url' expr:title='data:post.title.escaped'>
+                <data:post.title/>
+              </a>
+            </h2>
+
+            <!-- الوصف المختصر -->
+            <p class="post-card-snippet">
+              <data:post.snippet/>
+            </p>
+
+            <!-- التصنيف والتاريخ -->
+            <div class="post-card-meta">
+              <span class="post-card-date"><data:post.date/></span>
+              <span class="post-card-categories">
+                <b:loop values='data:post.labels' var='label'>
+                  <a expr:href='data:label.url'><data:label.name/></a><b:if cond='data:label.isLast != "true"'>, </b:if>
+                </b:loop>
+              </span>
+            </div>
+
+            <!-- رابط المقال -->
+            <a class="post-card-readmore" expr:href='data:post.url'>اقرأ المزيد</a>
+          </div>
+        </article>
+      </b:loop>
+    </b:includable>
+  </b:widget>
+</b:section>
