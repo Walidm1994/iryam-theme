@@ -5,29 +5,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>أريام أونلاين</title>
 
-<!-- Optimized CSS -->
+<!-- رابط CSS خارجي (يمكن استبداله برابط GitHub الخاص بك) -->
+<link rel="stylesheet" href="https://raw.githubusercontent.com/Walidm1994/iryam-theme/main/iryam-style-combined.css">
+
+<!-- CSS داخلي إضافي للألوان والتنسيق -->
 <style>
-  *, *::before, *::after {margin:0; padding:0; box-sizing:border-box;}
-  body {font-family:'Arial', sans-serif; background:#f5f5f5; color:#222; line-height:1.6;}
+  body {font-family: 'Arial', sans-serif; background:#f5f5f5; color:#222; line-height:1.6;}
   a {color:#007BFF; text-decoration:none;}
   a:hover {text-decoration:underline;}
   .container {max-width:1200px; margin:0 auto; padding:20px;}
   header {background:#fff; padding:15px 20px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-  header h1 {font-size:24px;}
+  header h1 {font-size:28px; color:#111;}
   nav {margin-top:10px;}
   nav a {margin-right:15px; font-weight:bold; display:inline-block;}
-  .featured-post, .latest-posts {background:#fff; padding:15px; margin:20px 0; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-  .featured-post img, .latest-posts img {width:100%; height:auto; border-radius:6px;}
-  .featured-post h2, .latest-posts h3 {margin-top:10px;}
-  .latest-posts {display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:15px;}
-  .post {padding:10px; border-radius:6px; box-shadow:0 1px 3px rgba(0,0,0,0.1);}
+
+  /* Featured Post */
+  .featured-post {background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); margin-bottom:20px;}
+  .featured-post img {width:100%; border-radius:6px;}
+  .featured-post h2 {margin-top:10px; font-size:22px; color:#222;}
+
+  /* Latest Posts */
+  .latest-posts {display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:15px; margin-bottom:20px;}
+  .post {background:#fff; padding:10px; border-radius:6px; box-shadow:0 1px 3px rgba(0,0,0,0.1);}
+  .post img {width:100%; border-radius:4px;}
+  .post h3 {margin-top:8px; font-size:18px; color:#222;}
   .post .date {font-size:12px; color:#666;}
+
+  /* Single Post */
+  .single-post {background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+  .single-post h1 {font-size:26px; margin-bottom:10px; color:#111;}
+  .single-post .content {margin-top:15px; font-size:16px; line-height:1.7;}
+  .single-post .meta {font-size:12px; color:#666; margin-bottom:15px;}
+
+  /* Footer */
   footer {background:#222; color:#fff; text-align:center; padding:20px; margin-top:40px;}
   footer a {color:#fff;}
 </style>
-
 </head>
 <body>
+
 <header>
   <h1>أريام أونلاين</h1>
   <nav>
@@ -39,21 +55,29 @@
 </header>
 
 <main class="container">
+
   <!-- Featured Post -->
   <section class="featured-post" id="featured-post"></section>
 
   <!-- Latest Posts -->
   <section class="latest-posts" id="latest-posts"></section>
+
+  <!-- Single Post Template -->
+  <section class="single-post" id="single-post" style="display:none;">
+    <h1 id="single-title"></h1>
+    <div class="meta" id="single-meta"></div>
+    <div class="content" id="single-content"></div>
+  </section>
+
 </main>
 
 <footer>
   جميع الحقوق محفوظة © 2022_2025 أريام أونلاين
 </footer>
 
-<!-- Blogger JSON Feed Script -->
+<!-- JavaScript لجلب أحدث المقالات -->
 <script>
-  // عدد المقالات المراد عرضها
-  const maxPosts = 6;
+  const maxPosts = 6; // عدد المقالات المراد عرضها
 
   function fetchPosts() {
     const script = document.createElement('script');
@@ -62,13 +86,14 @@
   }
 
   function displayPosts(json) {
+    if(!json.feed.entry) return;
+
     const posts = json.feed.entry;
-    if(!posts) return;
 
     // Featured Post
     const featured = posts[0];
     const featuredSection = document.getElementById('featured-post');
-    const featuredImg = featured.media$thumbnail ? featured.media$thumbnail.url.replace('/s72-c/', '/s600/') : '';
+    const featuredImg = featured.media$thumbnail ? featured.media$thumbnail.url.replace('/s72-c/','/s600/') : '';
     const featuredTitle = featured.title.$t;
     const featuredLink = featured.link.find(l=>l.rel==='alternate').href;
 
@@ -82,11 +107,10 @@
     const latestSection = document.getElementById('latest-posts');
     let html = '';
     posts.slice(1).forEach(post => {
-      const img = post.media$thumbnail ? post.media$thumbnail.url.replace('/s72-c/', '/s400/') : '';
+      const img = post.media$thumbnail ? post.media$thumbnail.url.replace('/s72-c/','/s400/') : '';
       const title = post.title.$t;
       const link = post.link.find(l=>l.rel==='alternate').href;
       const date = new Date(post.published.$t).toLocaleDateString('ar-EG', {day:'numeric', month:'long', year:'numeric'});
-
       html += `
         <div class="post">
           <img src="${img}" alt="${title}">
@@ -101,5 +125,6 @@
   // تشغيل جلب المقالات
   fetchPosts();
 </script>
+
 </body>
 </html>
