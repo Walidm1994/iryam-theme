@@ -1,0 +1,156 @@
+Skip to content
+Navigation Menu
+iryam-theme
+
+Code
+Issues
+Pull requests
+iryam-theme
+/iryam-style-combined.css
+Walidm1994
+Walidm1994
+now
+138 lines (125 loc) · 2.34 KB
+
+Code
+
+Blame
+/* -------------------------------
+   📘 تنسيقات قالب Jettham (الإصدار المفصول)
+   ملف: style.css
+   الوظيفة: تنسيق المظهر والألوان والعرض
+--------------------------------*/
+
+/* إعدادات عامة */
+body {
+  direction: rtl;
+  font-family: 'Tajawal', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* الروابط */
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+a:hover {
+  color: #0056b3;
+}
+
+/* الهيدر */
+header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* عنوان المدونة */
+header h1 {
+  font-size: 1.8em;
+  margin: 0;
+}
+
+/* البوستات الرئيسية (عرض بطاقات المقالات) */
+.post {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin: 15px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+.post:hover {
+  transform: translateY(-5px);
+}
+
+/* صور المقال */
+.post img {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #007bff;
+}
+
+/* عنوان المقال */
+.post-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+/* المقتطف */
+.post-snippet {
+  padding: 0 15px 15px;
+  font-size: 0.95em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* تذييل المقال */
+.post-footer {
+  border-top: 1px solid #eee;
+  padding: 10px 15px;
+  font-size: 0.85em;
+  color: #777;
+}
+
+/* أزرار المشاركة */
+.share-buttons {
+  display: flex;
+  gap: 10px;
+}
+.share-buttons a {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: #007bff;
+  color: #fff;
+}
+.share-buttons a:hover {
+  background: #0056b3;
+}
+
+/* الفوتر */
+footer {
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* الوضع الليلي */
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+body.dark header,
+body.dark footer,
+body.dark .post {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+body.dark a {
+  color: #64b5f6;
+}
+
+/* أزرار الوضع الليلي */
+.toggle-dark {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #007bff;
+  color: #fff;
+  margin: 10px;
+}
+.toggle-dark:hover {
+  background: #0056b3;
+}
+iryam-theme/iryam-style-combined.css at main · Walidm1994/iryam-theme
