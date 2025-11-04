@@ -1,24 +1,24 @@
-body{direction:rtl;font-family:'Tajawal',sans-serif;margin:0;padding:0;line-height:1.8;background:#f7f9fb;color:#1b1b1b;transition:.3s}
-a{color:#0077ff;text-decoration:none;transition:.3s}a:hover{color:#005ad1}
-header{background:linear-gradient(90deg,#0077ff,#00a3e0);color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08);padding:16px 24px;position:sticky;top:0;z-index:1000;transition:.3s}
+body{direction:rtl;font-family:'Tajawal',sans-serif;margin:0;padding:0;line-height:1.8;background:#f9faf9;color:#1d1d1d;transition:.3s}
+a{color:#1fae66;text-decoration:none;transition:.3s}a:hover{color:#178a52}
+header{background:linear-gradient(90deg,#1fae66,#178a52);color:#fff;padding:16px 24px;position:sticky;top:0;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,.08);transition:.3s}
 header h1{margin:0;font-size:1.9em;font-weight:700;letter-spacing:.3px}
-.post{background:#fff;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,.06);margin:18px;overflow:hidden;transition:.3s}.post:hover{transform:translateY(-5px);box-shadow:0 6px 16px rgba(0,0,0,.12)}
-.post img{width:100%;height:auto;border-bottom:3px solid #0077ff;transition:.4s}.post img:hover{opacity:.95;transform:scale(1.03)}
-.post-title{color:#0b0c10;font-size:1.3em;font-weight:700;padding:14px 20px 8px}
+.post{background:#fff;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,.05);margin:18px;overflow:hidden;transition:.3s}.post:hover{transform:translateY(-5px);box-shadow:0 6px 16px rgba(0,0,0,.1)}
+.post img{width:100%;height:auto;border-bottom:3px solid #1fae66;transition:.4s}.post img:hover{opacity:.96;transform:scale(1.03)}
+.post-title{color:#111;font-size:1.3em;font-weight:700;padding:14px 20px 8px}
 .post-snippet{color:#444;padding:0 20px 18px;font-size:.95em}
 .post-footer{border-top:1px solid #eee;color:#666;padding:10px 20px;font-size:.85em}
 .share-buttons{display:flex;gap:10px;flex-wrap:wrap;padding:0 20px 16px}
-.share-buttons a{background:linear-gradient(45deg,#0077ff,#00b8f0);color:#fff;padding:8px 16px;border-radius:10px;font-size:.9em;font-weight:600;box-shadow:0 2px 4px rgba(0,0,0,.1);transition:.3s}
-.share-buttons a:hover{transform:scale(1.05);box-shadow:0 2px 8px rgba(0,0,0,.2);background:linear-gradient(45deg,#005ad1,#009ae5)}
-footer{background:#0b0c10;color:#d0d0d0;text-align:center;padding:20px;font-size:.9em;border-top:1px solid #1e1e1e}
-.toggle-dark{cursor:pointer;background:#0077ff;color:#fff;border-radius:8px;padding:8px 14px;margin:10px;transition:.3s}
-.toggle-dark:hover{background:#005ad1;transform:scale(1.05)}
-body.dark{background:#0d1117;color:#e4e4e4}
-body.dark header{background:linear-gradient(90deg,#0a3d62,#003c66)}
-body.dark .post{background:#1a1f24;box-shadow:0 2px 10px rgba(0,0,0,.5)}
-body.dark a{color:#4aa3ff}body.dark a:hover{color:#82cfff}
-body.dark .share-buttons a{background:linear-gradient(45deg,#2196f3,#03a9f4)}
-body.dark footer{background:#090c10;color:#aaa}
+.share-buttons a{background:linear-gradient(45deg,#1fae66,#21c87a);color:#fff;padding:8px 16px;border-radius:10px;font-size:.9em;font-weight:600;box-shadow:0 2px 4px rgba(0,0,0,.1);transition:.3s}
+.share-buttons a:hover{transform:scale(1.05);box-shadow:0 2px 8px rgba(0,0,0,.2);background:linear-gradient(45deg,#178a52,#24d585)}
+footer{background:#0d1112;color:#d0d0d0;text-align:center;padding:20px;font-size:.9em;border-top:1px solid #222}
+.toggle-dark{cursor:pointer;background:#1fae66;color:#fff;border-radius:8px;padding:8px 14px;margin:10px;transition:.3s}
+.toggle-dark:hover{background:#178a52;transform:scale(1.05)}
+body.dark{background:#111412;color:#e4e4e4}
+body.dark header{background:linear-gradient(90deg,#0b3f28,#155b3a)}
+body.dark .post{background:#1a1e1b;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+body.dark a{color:#32d489}body.dark a:hover{color:#7af5b5}
+body.dark .share-buttons a{background:linear-gradient(45deg,#179f5a,#1fbf6a)}
+body.dark footer{background:#0a0c0a;color:#aaa}
 img{max-width:100%;height:auto;border-radius:6px;display:block}
 @media(max-width:1024px){.post{margin:16px}.post-title{font-size:1.2em}}
 @media(max-width:768px){header h1{font-size:1.5em}.post{margin:12px}.post-title{font-size:1.1em}}
