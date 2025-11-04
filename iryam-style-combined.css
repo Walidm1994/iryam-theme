@@ -1,1 +1,209 @@
-:root{--primary-color:#1fae66;--secondary-color:#178a52;--accent-color:#21c87a;--text-color:#1a1a1a;--bg-color:#fdfdf9;--header-bg:#1fae66;--link-color:#1a9e63;--hover-link-color:#0f7b46;--shadow-light:rgba(0,0,0,.08)}body.dark{--text-color:#e5e5e5;--bg-color:#111412;--header-bg:#135d3b;--link-color:#32d489;--hover-link-color:#7af5b5;--shadow-light:rgba(0,0,0,.4)}body{direction:rtl;font-family:'Tajawal',sans-serif;margin:0;padding:0;line-height:1.85;color:var(--text-color);background-color:var(--bg-color);transition:.3s;font-weight:500}a{color:var(--link-color);text-decoration:none;font-weight:600;transition:.3s}a:hover{color:var(--hover-link-color)}header{background-color:var(--header-bg);color:#fff;position:sticky;top:0;z-index:1000;padding:16px 28px;box-shadow:0 3px 12px var(--shadow-light);transition:.3s;font-weight:600}header h1{margin:0;font-size:2em;font-weight:800;letter-spacing:.5px}.navbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}.navbar a{color:#fff;font-weight:700;padding:8px 14px;border-radius:8px;transition:.3s}.navbar a:hover{background:rgba(255,255,255,.15)}.sidebar{background:rgba(255,255,255,.9);border-radius:14px;box-shadow:0 3px 12px var(--shadow-light);margin:18px;padding:18px}.sidebar h2{color:var(--secondary-color);border-bottom:3px solid var(--primary-color);padding-bottom:8px;margin-bottom:12px;font-size:1.2em;font-weight:700}.sidebar a{display:block;color:var(--secondary-color);padding:8px 0;font-weight:600}.sidebar a:hover{color:var(--hover-link-color)}.widget-title{font-size:1.2em;color:var(--secondary-color);font-weight:700;border-right:5px solid var(--primary-color);padding-right:8px;margin-bottom:12px}.post{background:#fff;border-radius:14px;box-shadow:0 3px 12px var(--shadow-light);margin:20px;overflow:hidden;transition:.3s}.post:hover{transform:translateY(-3px);box-shadow:0 5px 15px var(--shadow-light)}.post img{width:100%;height:auto;border-bottom:4px solid var(--primary-color);border-radius:10px;transition:.4s}.post img:hover{opacity:.97;transform:scale(1.02)}.post-title{color:#111;font-size:1.5em;font-weight:800;padding:18px 22px 8px}.post-snippet{color:#333;padding:0 22px 20px;font-size:1em;font-weight:500}.post-footer{border-top:1px solid #eee;color:#555;padding:14px 22px;font-size:.9em}button,.btn{background-color:var(--accent-color);color:#fff;border:none;border-radius:12px;padding:12px 20px;cursor:pointer;font-weight:700;transition:.3s}button:hover,.btn:hover{background-color:var(--secondary-color);transform:translateY(-2px)}.share-buttons{display:flex;gap:12px;flex-wrap:wrap;padding:0 22px 20px}.share-buttons a{background-color:var(--accent-color);color:#fff;padding:10px 18px;border-radius:12px;font-size:1em;font-weight:700;box-shadow:0 3px 6px rgba(0,0,0,.12);transition:.3s}.share-buttons a:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.25);background-color:var(--secondary-color)}footer{background-color:#111412;color:#dcdcdc;text-align:center;padding:30px;font-size:1em;border-top:1px solid #222}footer a{color:var(--primary-color)}footer a:hover{text-decoration:underline}body.dark header{background-color:var(--header-bg)}body.dark .navbar a{color:#fff}body.dark .post{background:#1b1f1c;box-shadow:0 3px 12px rgba(0,0,0,.5)}body.dark .sidebar{background:#1e2120;box-shadow:0 3px 12px rgba(0,0,0,.4)}body.dark .sidebar h2{color:#32d489;border-color:var(--primary-color)}body.dark .sidebar a{color:#7df0b2}body.dark .sidebar a:hover{color:#24d585}body.dark .post-title{color:#fff}body.dark .post-snippet{color:#ccc}body.dark footer{background-color:#0b0d0b;color:#bbb;border-top:1px solid #222}body.dark a{color:var(--link-color)}body.dark a:hover{color:var(--hover-link-color)}body.dark button,.btn{background-color:var(--secondary-color)}body.dark .toggle-dark{background:#178a52}img{max-width:100%;height:auto;border-radius:10px;display:block}@media(max-width:1024px){header h1{font-size:1.7em}.post{margin:16px}.sidebar{margin:14px}.post-title{font-size:1.3em}}@media(max-width:768px){header h1{font-size:1.5em}.navbar{flex-direction:column}.post{margin:12px}.post-title{font-size:1.15em}.post:hover,.btn:hover,.share-buttons a:hover{transform:none;box-shadow:none}}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تجربة ألوان وخطوط iryam shop</title>
+
+<!-- خطوط Google -->
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+:root {
+  /* ألوان الوضع النهاري */
+  --primary-color: #1fae66;
+  --secondary-color: #178a52;
+  --accent-color: #25c57b;
+  --bg-color: #fafcfb;
+  --text-color: #1b1b1b;
+  --muted-text: #444;
+  --header-bg: #1fae66;
+  --link-color: #138b54;
+  --hover-link-color: #0d5e38;
+  --container-bg: #ffffff;
+  --shadow-light: rgba(0,0,0,0.08);
+  --tag-bg: #e8f9f0;
+  --icon-color: #138b54;
+}
+
+body.dark {
+  /* ألوان الوضع الليلي */
+  --bg-color: #101412;
+  --text-color: #e7e7e7;
+  --muted-text: #b8b8b8;
+  --header-bg: #136844;
+  --link-color: #36da8e;
+  --hover-link-color: #8affc3;
+  --container-bg: rgba(30,30,30,0.85);
+  --shadow-light: rgba(0,0,0,0.4);
+  --tag-bg: #1a2b24;
+  --icon-color: #36da8e;
+}
+
+/* إعدادات عامة */
+body {
+  direction: rtl;
+  font-family: 'Tajawal', 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--bg-color) url('https://cdn.jsdelivr.net/gh/Walidm1994/iryam-theme/bg-light-pattern.png') repeat;
+  color: var(--text-color);
+  line-height: 1.9;
+  transition: background .4s ease, color .4s ease;
+  font-size: 17px;
+}
+
+body.dark {
+  background: var(--bg-color) url('https://cdn.jsdelivr.net/gh/Walidm1994/iryam-theme/bg-dark-pattern.png') repeat;
+}
+
+/* الرأس */
+header {
+  background: var(--header-bg);
+  color: #fff;
+  padding: 20px 28px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  box-shadow: 0 3px 12px var(--shadow-light);
+  letter-spacing: 0.4px;
+  border-bottom: 3px solid var(--accent-color);
+}
+
+/* الحاوية */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 28px;
+  background: var(--container-bg);
+  border-radius: 18px;
+  box-shadow: 0 3px 14px var(--shadow-light);
+  transition: background .4s ease, box-shadow .4s ease;
+}
+
+/* النصوص والعناوين */
+h2, h3 {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: 0.3px;
+}
+p {
+  color: var(--muted-text);
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+/* الروابط */
+a {
+  color: var(--link-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .3s;
+}
+a:hover {
+  color: var(--hover-link-color);
+  text-decoration: underline;
+}
+
+/* التصنيفات والهاشتاقات */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+.tag {
+  background: var(--tag-bg);
+  color: var(--link-color);
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background .3s ease, color .3s ease;
+}
+.tag:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+/* أيقونات التواصل */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 30px;
+}
+.social a {
+  color: var(--icon-color);
+  font-size: 22px;
+  transition: color .3s ease, transform .2s ease;
+}
+.social a:hover {
+  color: var(--hover-link-color);
+  transform: scale(1.15);
+}
+
+/* زر التبديل */
+.toggle-dark {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+  transition: background .3s ease, transform .2s ease;
+  font-family: 'Tajawal', sans-serif;
+}
+.toggle-dark:hover {
+  background: var(--secondary-color);
+  transform: scale(1.05);
+}
+</style>
+</head>
+
+<body>
+<header>تجربة الألوان والخطوط - iryam shop</header>
+
+<button class="toggle-dark" onclick="toggleDarkMode()">تبديل الوضع 🌗</button>
+
+<div class="container">
+  <h2>مرحبًا بك في تجربة القالب</h2>
+  <p>تم تحسين الخطوط والألوان لتوفير تجربة قراءة مريحة وواضحة في الوضعين النهاري والليلي.</p>
+  <p>جرب الضغط على زر <strong>تبديل الوضع</strong> لتلاحظ كيف يتغير التباين بسلاسة.</p>
+  <a href="#">رابط تجريبي</a>
+
+  <div class="tags">
+    <span class="tag">#تصميم</span>
+    <span class="tag">#مجوهرات</span>
+    <span class="tag">#iryam_shop</span>
+  </div>
+
+  <div class="social">
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-twitter-x"></i></a>
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-whatsapp"></i></a>
+  </div>
+</div>
+
+<script>
+function toggleDarkMode(){
+  document.body.classList.toggle('dark');
+  localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+}
+window.onload = () => {
+  if(localStorage.getItem('theme') === 'dark'){
+    document.body.classList.add('dark');
+  }
+};
+</script>
+
+</body>
+</html>
