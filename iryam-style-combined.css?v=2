@@ -64,3 +64,61 @@ body.dark pre,body.dark code{background:#222;color:#ddd;}
   --jt-link-color: #cda434;
   --jt-link-hover: #36da8e;
 }
+/* تحسين الأيقونات والعناصر في الوضع الفاتح */
+#header,
+header {
+  background: linear-gradient(90deg, var(--green), var(--green-light)) !important;
+  color: var(--white) !important;
+}
+
+#header .icon,
+#header .fa,
+#header svg,
+.toggle-dark,
+#navbar .nav-link,
+#navbar .dropdown-toggle {
+  color: var(--white) !important;
+}
+
+#header .icon:hover,
+.toggle-dark:hover {
+  color: var(--gold) !important;
+}
+
+/* جعل الخلفية العامة بيضاء واضحة */
+body {
+  background: var(--bg) !important;
+}
+
+/* ✅ تحسين عناصر التصنيفات (Tags) */
+.tag,
+.labels a,
+.post-labels a {
+  background: var(--gray) !important;
+  color: var(--green) !important;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-weight: 600;
+}
+
+.tag:hover,
+.labels a:hover,
+.post-labels a:hover {
+  background: var(--green) !important;
+  color: #fff !important;
+}
+
+/* ✅ نفس التصنيفات ولكن في الوضع الداكن */
+.dark-mode .tag,
+.dark-mode .labels a,
+.dark-mode .post-labels a {
+  background: rgba(255,255,255,0.1) !important;
+  color: var(--gold) !important;
+}
+
+.dark-mode .tag:hover,
+.dark-mode .labels a:hover,
+.dark-mode .post-labels a:hover {
+  background: var(--gold) !important;
+  color: #000 !important;
+}
