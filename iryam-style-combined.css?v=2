@@ -37,3 +37,9 @@ footer a:hover{color:#fff!important}
 
 input,textarea,select{width:100%;padding:12px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--text);transition:.3s}
 input:focus,textarea:focus{border-color:var(--gold);outline:none}
+header *[class*="icon"],header .social-icons a,header .navigation a,header button,.header-utilities a,.header-utilities button,.header-utilities svg,.navbar-top a,.navbar-top button,.navbar-top svg,.top-bar a,.top-bar button,.top-bar svg{color:#fff!important;fill:#fff!important}
+header .social-icons a:hover,.header-utilities a:hover,.navbar-top a:hover,.top-bar a:hover{color:var(--gold)!important;fill:var(--gold)!important}
+header,#header,.top-bar,.navbar-top,.header-utilities{background:linear-gradient(90deg,var(--green),var(--green-light))!important;border-bottom:3px solid var(--gold)!important}
+.tag,.labels a,.post-labels a{background:var(--gray)!important;color:var(--green)!important}
+.dark-mode .tag,.dark-mode .labels a,.dark-mode .post-labels a{background:rgba(255,255,255,.1)!important;color:var(--gold)!important}
+.dark-mode .tag:hover,.dark-mode .labels a:hover,.dark-mode .post-labels a:hover{background:var(--gold)!important;color:#000!important}
