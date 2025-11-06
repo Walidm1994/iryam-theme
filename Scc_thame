@@ -1,1 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');:root{--font-body:15px "Cairo",sans-serif;--font-heading:700 1.6rem "Cairo",sans-serif;--color-primary:#c12872;--color-primary-hover:#f00b7a;--bg-body:#fff;--bg-content:#fff;--text-body:#333;--text-heading:#111;--link-color:#f67938;--link-hover:#f00b7a;--border-color:#e3e3e3;--btn-bg:#f67938;--btn-text:#fff;--btn-hover:#f00b7a;--header-bg:#fff;--header-text:#333;--menu-text:#444;--menu-hover:var(--color-primary);--menu-active:var(--color-primary);--footer-bg:#000;--footer-text:#bdbdbd}.dark-mode{--bg-body:#141414;--bg-content:#1a1a1a;--text-body:#e9e9e9;--text-heading:#ffd36a;--border-color:#2c2c2c;--header-bg:#1a1a1a;--header-text:#fafafa;--menu-text:#dedede;--menu-hover:#ffd36a;--menu-active:#ffd36a;--footer-bg:#0d0d0d;--footer-text:#bfbfbf}html,body{margin:0;padding:0;background:var(--bg-body);color:var(--text-body);font:var(--font-body);line-height:1.7;-webkit-font-smoothing:antialiased}img{max-width:100%;height:auto;loading:lazy}a{color:var(--link-color);text-decoration:none;transition:.2s}a:hover{color:var(--link-hover)}h1,h2,h3,h4,h5,h6{font:var(--font-heading);color:var(--text-heading);line-height:1.4;margin:0 0 12px}button,.btn{background:var(--btn-bg);color:var(--btn-text);border:none;padding:.55rem 1.2rem;border-radius:6px;font-weight:600;cursor:pointer;transition:.25s}button:hover,.btn:hover{background:var(--btn-hover)}.card{background:var(--bg-content);border:1px solid var(--border-color);border-radius:10px;padding:16px;margin-bottom:18px;transition:.25s}.card:hover{transform:translateY(-3px)}.menu a{color:var(--menu-text);padding:8px 14px;display:inline-block}.menu a:hover{color:var(--menu-hover)}.menu .active{color:var(--menu-active)}footer{background:var(--footer-bg);color:var(--footer-text);padding:24px;text-align:center;font-size:.9rem}*{scroll-behavior:smooth}:where(img,iframe){aspect-ratio:auto}
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+
+:root {
+  --font-body: 15px "Cairo", sans-serif;
+  --font-heading: 700 1.6rem "Cairo", sans-serif;
+  --color-primary: #c12872;
+  --color-primary-hover: #f00b7a;
+  --bg-body: #fff;
+  --bg-content: #fff;
+  --text-body: #333;
+  --text-heading: #111;
+  --link-color: #f67938;
+  --link-hover: #f00b7a;
+  --border-color: #e3e3e3;
+  --btn-bg: #f67938;
+  --btn-text: #fff;
+  --btn-hover: #f00b7a;
+  --header-bg: #fff;
+  --header-text: #333;
+  --menu-text: #444;
+  --menu-hover: var(--color-primary);
+  --menu-active: var(--color-primary);
+  --footer-bg: #000;
+  --footer-text: #bdbdbd;
+}
+
+.dark-mode {
+  --bg-body: #141414;
+  --bg-content: #1a1a1a;
+  --text-body: #e9e9e9;
+  --text-heading: #ffd36a;
+  --border-color: #2c2c2c;
+  --header-bg: #1a1a1a;
+  --header-text: #fafafa;
+  --menu-text: #dedede;
+  --menu-hover: #ffd36a;
+  --menu-active: #ffd36a;
+  --footer-bg: #0d0d0d;
+  --footer-text: #bfbfbf;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-body);
+  color: var(--text-body);
+  font: var(--font-body);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; loading: lazy; }
+a { color: var(--link-color); text-decoration: none; transition: .2s; }
+a:hover { color: var(--link-hover); }
+h1, h2, h3, h4, h5, h6 {
+  font: var(--font-heading);
+  color: var(--text-heading);
+  line-height: 1.4;
+  margin: 0 0 12px;
+}
+button, .btn {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  padding: .55rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .25s;
+}
+button:hover, .btn:hover { background: var(--btn-hover); }
+.card {
+  background: var(--bg-content);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 18px;
+  transition: .25s;
+}
+.card:hover { transform: translateY(-3px); }
+.menu a { color: var(--menu-text); padding: 8px 14px; display: inline-block; }
+.menu a:hover { color: var(--menu-hover); }
+.menu .active { color: var(--menu-active); }
+footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 24px;
+  text-align: center;
+  font-size: .9rem;
+}
+* { scroll-behavior: smooth; }
+:where(img, iframe) { aspect-ratio: auto; }
