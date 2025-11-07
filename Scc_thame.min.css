@@ -1,4 +1,227 @@
-/* 🌞🌙 Al Jazeera Blogger Theme + Cairo Font Minified */
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');:root{--main:#DBA200;--accent:#212E64;--bg:#fff;--surface:#f8f8f9;--text:#111;--muted:#555;--border:#e2e2e2;--shadow:rgba(0,0,0,.05);--highlight:rgba(219,162,0,.1);--font-body:"Cairo",sans-serif;--font-heading:"Cairo",sans-serif;--speed:.25s}@media(prefers-color-scheme:dark){:root{--main:#DBA200;--accent:#9ea9ff;--bg:#0d0d0f;--surface:#18181b;--text:#f1f1f1;--muted:#bbb;--border:#333;--shadow:rgba(0,0,0,.6);--highlight:rgba(219,162,0,.2)}}*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--text);font-family:var(--font-body);line-height:1.8;transition:background var(--speed),color var(--speed)}h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);font-weight:700}a{color:var(--accent);text-decoration:none;transition:color var(--speed)}a:hover{color:var(--main)}header,nav{background:var(--surface);border-bottom:1px solid var(--border);box-shadow:0 2px 6px var(--shadow);padding:1em}header h1,header h2{color:var(--accent);font-weight:700}main{max-width:900px;margin:auto;padding:1.5em}footer{background:var(--accent);color:#fff;text-align:center;padding:1.5em;font-size:.9em}button,.button,.btn{background:var(--main);color:#fff;border:none;border-radius:6px;padding:.6em 1.2em;font-family:var(--font-body);font-weight:600;cursor:pointer;transition:background var(--speed),transform var(--speed)}button:hover,.btn:hover{background:var(--accent);transform:translateY(-2px)}button:disabled,.btn:disabled{opacity:.6;cursor:not-allowed}.card,.post,.widget{background:var(--surface);border:1px solid var(--border);border-radius:10px;box-shadow:0 2px 8px var(--shadow);padding:1.2em;margin-bottom:1.5em;transition:background var(--speed),color var(--speed)}.post-title a{color:var(--main);font-weight:700}.post-title a:hover{color:var(--accent)}p,li{color:var(--text)}blockquote{border-right:4px solid var(--main);background:var(--highlight);padding:1em;margin:1em 0;font-style:italic;color:var(--muted)}img{max-width:100%;height:auto;border-radius:6px}input,textarea,select{width:100%;padding:.7em;border:1px solid var(--border);border-radius:6px;background:var(--surface);color:var(--text);font-family:var(--font-body);transition:border var(--speed),background var(--speed)}input:focus,textarea:focus,select:focus{outline:none;border-color:var(--main);background:var(--bg)}nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:1em}nav a{font-weight:600;color:var(--text)}nav a:hover{color:var(--main)}.pagination{display:flex;justify-content:center;gap:.5em;margin:2em 0}.pagination a{padding:.5em .9em;border:1px solid var(--border);border-radius:4px;background:var(--surface);color:var(--text)}.pagination a:hover{background:var(--main);color:#fff}.sidebar{background:var(--surface);padding:1em;border-radius:10px;box-shadow:0 2px 6px var(--shadow)}.widget-title{color:var(--accent);font-weight:700;margin-bottom:.5em}table{width:100%;border-collapse:collapse;margin:1em 0}th,td{border:1px solid var(--border);padding:.6em;text-align:right}th{background:var(--surface);color:var(--accent)}hr{border:none;border-top:1px solid var(--border);margin:2em 0}@media(max-width:768px){nav ul{flex-direction:column}header,nav,main,footer{padding:1em}h1{font-size:1.6em}h2{font-size:1.3em}}
-/* القسم 5: تنسيقات الصفحة العامة */
-body{font:$(body.text);color:var(--bs-body-color);background-color:var(--bs-body-bg);line-height:1.5;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}.d-block{display:block!important}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font:$(posts.title)}a{transition-property:background-color,border-color,color,fill,stroke;transition-timing-function:cubic-bezier(0.4,0,0.2,1);transition-duration:.3s;text-decoration:none;color:var(--jt-link-color)}a:hover{color:var(--jt-link-hover)}.fs-7{font-size:.875rem}.fs-8{font-size:.75rem}.fs-9{font-size:.7rem}.btn{box-shadow:none!important}.btn-sm{min-width:32px;min-height:32px}img,svg,iframe{max-width:100%}img{height:auto;object-fit:cover}label{cursor:pointer}.visually-auto{position:unset!important}.form-control:focus{box-shadow:none;border-color:var(--jt-primary)}.form-control::placeholder{opacity:.5}.dropdown-toggle::after{border-width:.25em .25em 0}.dropdown-menu{margin:0;padding:0}.px-3{padding-right:1rem;padding-left:1rem}.ratio:before{content:none}.ratio-1x1{padding-bottom:100%}.ratio-4x3{padding-bottom:75%}.ratio-16x9{padding-bottom:56.25%}.ratio-21x9{padding-bottom:43%}.object-cover{object-fit:cover}.jt-text-primary,.hover-text-primary:hover,input:checked ~ .check-text-primary{color:var(--jt-primary)!important}.jt-btn-primary,.jt-btn-outline-primary:hover{color:#fff;background-color:var(--jt-btn-primary);border-color:var(--jt-btn-primary)}.jt-btn-light{color:var(--bs-body-color);background-color:var(--jt-bg-light);border-color:var(--jt-bg-light)}.jt-btn-light:hover{color:var(--jt-btn-light-hover)}.jt-btn-primary:hover,.hover-btn-primary:hover,input:checked+.jt-btn-outline-primary{color:#fff!important;background-color:var(--jt-btn-primary-hover)!important;border-color:var(--jt-btn-primary-hover)!important}.jt-btn-outline-primary{color:var(--jt-btn-primary);border-color:var(--jt-btn-primary)}.jt-bg-primary{background-color:var(--jt-primary)}.jt-bg-light{background-color:var(--jt-bg-light)}.bg-archive{background-color:var(--jt-archive-bg)}.jt-border-light{border-color:var(--jt-border-light)!important}input:checked ~ .d-block-check{display:block!important}input:checked ~ .d-none-check{display:none!important}.dropdown-menu,.accordion-item,.accordion-header{background-color:var(--bs-body-bg);color:var(--bs-body-color);border-color:var(--jt-border-light)}.lazyload{transition-property:opacity;transition-timing-function:cubic-bezier(0.4,0,0.2,1);transition-duration:.3s;opacity:0}.lazyload.loaded{opacity:1}pre{background-color:var(--jt-bg-light);margin-bottom:1rem;padding:1rem;font-size:.75rem}blockquote{border-right:5px solid var(--jt-blockquote);color:inherit;font-size:1.125rem;margin-bottom:1.5rem;margin-top:1.5rem;padding-right:1rem}.header-animate.header-hidden{transform:translateY(-100%);box-shadow:none!important}
+/* =========================
+   Al Jazeera — Modern theme
+   متوافق مع JetTheme variables
+   Replace your iryam-dual-mode.css with this
+   ========================= */
+
+/* ---- 1) Font-face (استبدل الرابط إذا لديك ملف في مستودعك) ---- */
+@font-face{
+  font-family: "CairoLocal";
+  src: url("https://cdn.jsdelivr.net/gh/Walidm1994/iryam-theme/fonts/Cairo-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face{
+  font-family: "CairoLocal";
+  src: url("https://cdn.jsdelivr.net/gh/Walidm1994/iryam-theme/fonts/Cairo-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---- 2) Palette (النسخة النهارية والداكنة لأسلوب الجزيرة الحديث) ----
+   - نعرّف المتغيرات العامة ثم نزامنها مع متغيرات القالب (--jt-*, --bs-*)
+----------------------------------------------------------------- */
+:root{
+  /* Al Jazeera modern palette */
+  --az-gold: #DBA200;           /* الذهبى الرئيسي */
+  --az-charcoal: #0f1b2d;       /* نص/عناوين قوية */
+  --az-muted: #6b7482;          /* نص ثانوي */
+  --az-surface: #ffffff;        /* بطاقات / سطح */
+  --az-bg: #ffffff;             /* خلفية الصفحة */
+  --az-border: #e6e8eb;         /* حدود فاتحة */
+  --az-shadow: rgba(15,27,45,0.06);
+  --az-highlight: rgba(219,162,0,0.08);
+
+  /* Map to JetTheme / Bootstrap compatible variables (to avoid conflicts) */
+  --jt-primary: var(--az-gold);
+  --jt-btn-primary: var(--az-gold);
+  --jt-btn-primary-hover: #c99200;
+  --bs-body-bg: var(--az-bg);
+  --bs-body-color: var(--az-charcoal);
+  --jt-bg-light: var(--az-surface);
+  --jt-border-light: var(--az-border);
+  --jt-blockquote: var(--az-gold);
+  --jt-heading-color: var(--az-charcoal);
+  --jt-link-color: var(--az-charcoal);
+  --jt-link-hover: var(--az-gold);
+  --jt-socket-bg: #070707; /* footer small area if needed */
+  --font-body: "CairoLocal", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --font-heading: "CairoLocal", var(--font-body);
+  --transition-speed: .25s;
+}
+
+/* ---- Dark mode variables (explicit, not only prefers-color-scheme) ---- */
+:root[data-theme="dark"], .dark-mode {
+  --az-gold: #DBA200;
+  --az-charcoal: #eaeef8;        /* نص فاتح */
+  --az-muted: #b8bfd0;
+  --az-surface: #0f1114;         /* بطاقات داكنة */
+  --az-bg: #0b0c0e;              /* خلفية داكنة */
+  --az-border: #1b1e22;
+  --az-shadow: rgba(0,0,0,0.6);
+  --az-highlight: rgba(219,162,0,0.14);
+
+  --jt-primary: var(--az-gold);
+  --jt-btn-primary: var(--az-gold);
+  --jt-btn-primary-hover: #c99200;
+  --bs-body-bg: var(--az-bg);
+  --bs-body-color: var(--az-charcoal);
+  --jt-bg-light: #0f1114;
+  --jt-border-light: var(--az-border);
+  --jt-blockquote: var(--az-gold);
+  --jt-heading-color: var(--az-charcoal);
+  --jt-link-color: var(--az-charcoal);
+  --jt-link-hover: var(--az-gold);
+  --jt-socket-bg: #060607;
+}
+
+/* ---- 3) Base reset & typography (متوافق مع القالب) ---- */
+html,body{height:100%}
+body{
+  font-family: var(--font-body);
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  line-height:1.6;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--font-heading);
+  color: var(--jt-heading-color);
+  font-weight:700;
+  line-height:1.2;
+}
+
+/* Links & buttons */
+a{ color: var(--jt-link-color); text-decoration:none; transition: color var(--transition-speed); }
+a:hover{ color: var(--jt-link-hover); text-decoration: none; }
+
+/* Buttons mapped to JetTheme */
+.button, .btn, button {
+  background: var(--jt-btn-primary);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: .55rem .9rem;
+  font-weight:700;
+  cursor:pointer;
+  transition: transform var(--transition-speed), background var(--transition-speed);
+}
+.button:hover, .btn:hover, button:hover{
+  background: var(--jt-btn-primary-hover);
+  transform: translateY(-2px);
+}
+
+/* Cards, posts, widgets */
+.card, .post, .widget{
+  background: var(--jt-bg-light);
+  border: 1px solid var(--jt-border-light);
+  border-radius: 10px;
+  box-shadow: 0 6px 18px var(--az-shadow);
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  transition: background var(--transition-speed), color var(--transition-speed), border-color var(--transition-speed);
+}
+
+/* Post title and excerpt */
+.post-title a{ color: var(--az-gold); font-weight:700; }
+.post-title a:hover{ color: var(--az-charcoal); }
+
+/* Blockquote */
+blockquote {
+  border-right: 4px solid var(--jt-blockquote);
+  background: var(--az-highlight);
+  padding: 1rem;
+  font-style: italic;
+  color: var(--az-muted);
+  margin: 1rem 0;
+}
+
+/* Images */
+img{ max-width:100%; height:auto; border-radius:6px; display:block; }
+
+/* Inputs */
+input, textarea, select{
+  width:100%;
+  padding:.65rem;
+  border:1px solid var(--jt-border-light);
+  border-radius:6px;
+  background: var(--jt-bg-light);
+  color: var(--bs-body-color);
+  transition: border-color var(--transition-speed), background var(--transition-speed);
+}
+input:focus, textarea:focus, select:focus{
+  outline:none;
+  border-color: var(--jt-primary);
+  background: var(--bs-body-bg);
+}
+
+/* Nav & header stylings keep minimal override to match JetTheme */
+header, nav{
+  background: var(--jt-bg-light);
+  border-bottom: 1px solid var(--jt-border-light);
+  box-shadow: 0 2px 8px var(--az-shadow);
+}
+
+/* Footer (socket) */
+#socket, footer{
+  background: var(--jt-socket-bg);
+  color: #fff;
+}
+
+/* Small responsive helpers (keep existing responsive behavior) */
+@media (max-width:768px){
+  nav ul{ flex-direction: column; gap:.6rem; }
+  header, nav, main, footer{ padding: 1rem; }
+}
+
+/* Ensure JetTheme variable fallbacks exist (in case template expects them) */
+:root{
+  --az-font-size-base: 16px;
+  --az-radius: 10px;
+}
+body{ font-size: var(--az-font-size-base); }
+
+/* ---- 4) Theme toggle button styles (سيارة لإضافته داخل الـ header) ---- */
+#theme-toggle{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+  padding:.35rem .6rem;
+  border-radius:999px;
+  background:transparent;
+  border:1px solid transparent;
+  cursor:pointer;
+  font-weight:600;
+  color:var(--bs-body-color);
+  transition: background var(--transition-speed), color var(--transition-speed), border-color var(--transition-speed);
+}
+#theme-toggle .icon{
+  display:inline-block;
+  width:18px;
+  height:18px;
+  line-height:18px;
+  text-align:center;
+  border-radius:50%;
+  background:var(--az-gold);
+  color:#08101a;
+  font-size:12px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.08);
+}
+:root #theme-toggle{ border-color: transparent; }
+:root[data-theme="dark"] #theme-toggle{ border-color: rgba(255,255,255,0.06); }
+
+/* ---- 5) Small utilities to keep compatibility with existing .lazyload etc. ---- */
+.lazyYoutube, .lazyload{ transition:opacity .3s ease; opacity:0; }
+.lazyload.loaded{ opacity:1; }
+
+/* ---- 6) Accessibility tweaks ---- */
+#theme-toggle:focus{ outline: 3px solid rgba(219,162,0,0.18); outline-offset:3px; }
+
+/* End of file */
